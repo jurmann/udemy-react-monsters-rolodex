@@ -14,9 +14,9 @@ class App extends Component {
     };
   }
 
-  handleChange = e => {
-    this.setState({ searchField: e.target.value })
-  }
+  handleChange = (e) => {
+    this.setState({ searchField: e.target.value });
+  };
 
   async componentWillMount() {
     let response = await fetch("https://jsonplaceholder.typicode.com/users/");
